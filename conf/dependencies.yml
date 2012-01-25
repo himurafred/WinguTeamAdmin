@@ -2,4 +2,12 @@
 
 require:
     - play
-    - play -> Authenticate
+    - customModules -> Authenticate
+
+repositories:
+
+    - playCustomModules:
+        type: local
+        artifact: "/home/himurafred/application_mobile/play/Authenticate"
+        contains:
+            - customModules -> *
